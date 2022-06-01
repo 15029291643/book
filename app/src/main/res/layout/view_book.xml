@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp">
+
+    <ImageView
+        android:id="@+id/book_img"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_book"
+        tools:srcCompat="@drawable/img_book" />
+
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="悍卒斩天"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/book_intro"
+        app:layout_constraintStart_toEndOf="@+id/book_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/book_intro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:lines="2"
+        android:text="戏子门前客不绝，将军坟前蒿草深。美人要看风和雨，枯骨坟上起楼台。 才子俊杰楼上豪情泼墨，无名小卒楼下血染浊泪。 悍卒一怒横刀行，砍了这个太平盛世！QQ群：69712014"
+        app:layout_constraintBottom_toTopOf="@+id/book_author"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/book_img"
+        app:layout_constraintTop_toBottomOf="@+id/book_name" />
+
+    <TextView
+        android:id="@+id/book_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="三青色"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/book_img"
+        app:layout_constraintTop_toBottomOf="@+id/book_intro" />
+
+    <TextView
+        android:id="@+id/book_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="连载中 奇幻玄幻"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_intro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
